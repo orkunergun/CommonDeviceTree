@@ -113,13 +113,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor
 
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-MT6768
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_VENDOR)/bin/dt2w_event
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
@@ -236,7 +229,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor \
-    android.hardware.power-V1-ndk_platform.vendor
+    android.hardware.power-service-mediatek \
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -298,10 +291,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
                                 
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
